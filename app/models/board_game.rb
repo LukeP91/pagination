@@ -1,2 +1,3 @@
-class BoardGames < ActiveRecord::Base
+class BoardGame < ActiveRecord::Base
+  belongs_to :category
 end
