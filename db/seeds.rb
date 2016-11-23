@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+10.times do
+  @category = Category.create(name: FFaker::Book.genre)
+  10.times do
+    BoardGame.create(name: FFaker::Book.title, category_id: @category.id)
+  end
+end
