@@ -10,13 +10,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'slim'
-
+gem 'ffaker'
 
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.5'
   gem 'capybara'
-  gem 'ffaker'
   gem 'factory_girl_rails'
   gem 'capybara-webkit'
 end
