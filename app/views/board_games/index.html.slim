@@ -9,4 +9,6 @@ table
       td = link_to game.name, board_game_path(game)
       td = game.category.name
 br
+  = will_paginate @board_games
+br
   = link_to 'Home', root_path

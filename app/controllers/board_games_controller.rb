@@ -1,7 +1,7 @@
 class BoardGamesController < ApplicationController
 
   def index
-    @board_games = BoardGame.all
+    @board_games = BoardGame.all.paginate(:page => params[:page])
   end
 
   def show
